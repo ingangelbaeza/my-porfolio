@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio de Angel Baeza</title>
+    <link rel="stylesheet" href="build/css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/alpinejs" defer></script>
+  </head>
+  <body class="bg-gray-100">
+    <div class="mx-auto max-w-5xl py-6 sm:px-6 lg:px-8 mt-20">
+      <div x-data="{ open: 'about-me' }">
+        <div class="md:grid md:grid-cols-6 md:gap-6">
+          <aside class="md:col-span-1">
+            <div class="px-4 sm:px-0">
+              <div class="">
+                <img class="inline-block h-28 w-auto overflow-hidden rounded-md p-1" src="img/logo.png" alt="logo-app"/>
+              </div>
+              <div class="mb-6 mt-6">
+                <a href="#" class="font-medium text-gray-600 hover:underline"  x-on:click="open = 'about-me'">
+                  Acerca de mi
+                </a>
+              </div>
+              <div class="mb-6">
+                <a href="#" class="font-medium text-gray-600 hover:underline" x-on:click="open = 'skills'">
+                  Habilidades
+                </a>
+              </div>
+              <div class="mb-6">
+                <a href="#" class="font-medium text-gray-600 hover:underline" x-on:click="open = 'education'">
+                  Educación
+                </a>
+              </div>
+              <div class="mb-6">
+                <a href="#" class="font-medium text-gray-600 hover:underline" x-on:click="open = 'porfolio'">
+                  Portafolio
+                </a>
+              </div>
+              <div class="mb-6">
+                <a href="#" class="font-medium text-gray-600 hover:underline" x-on:click="open = 'contact'">
+                  Contacto
+                </a>
+              </div>
+            </div>
+          </aside>
+          
+          <main class="mt-5 md:col-span-5 md:mt-0">
+            <div x-show="open == 'about-me'">
+              <h1 class="text-gray-800 text-3xl font-normal leading-normal mt-0 mb-2">Luis Angel Baeza Tovar</h1>
+              <p class="text-gray-600 text-base">Bienvenido a mi portafolio profesional. Me complace presentarme como un profesional dedicado y apasionado por mi trabajo. Con 7 años de experiencia en el desarrollo web, he desarrollado un conjunto de habilidades y conocimientos que me permiten brindar soluciones eficaces a los desafíos a los que me enfrento.</p>
+              <div class="mt-6">
+                <div class="md:grid md:grid-cols-3 md:gap-6">
+                  <div class="md:col-span-1">
+                    <img class="object-cover h-48 w-48 rounded-full" src="./img/this-is-me.jpeg" alt="me">
+                  </div>
+                  <div class="md:col-span-1">
+                    <ul>
+                      <li>
+                        <a class="hover:underline text-base text-gray-600" href="https://github.com/ingangelbaeza">
+                          <i class="fa-brands fa-github text-4xl text-gray-900"></i>
+                          @ingangelbaeza
+                        </a>
+                      </li>
+                      <li class="mt-3">
+                        <a class="hover:underline text-base text-gray-600" href="https://www.linkedin.com/in/luisangelbaezatovar/">
+                          <i class="fa-brands fa-linkedin text-4xl text-gray-900"></i>
+                          @luisangelbaezatovar
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div x-show="open == 'skills'">
+              <h1 class="text-3xl text-gray-800 font-normal leading-normal mt-0 mb-2">Habilidades</h1>
+              <div class="md:grid md:grid-cols-2 md:gap-3">
+                <div class="md:col-span-1">
+                  <h2 class="text-2xl text-gray-700 font-normal leading-normal mt-0 mb-4">Habilidades blandas</h2>
+                  <ul class="space-y-4">
+                    <li>
+                      <i class="fa-sharp fa-solid fa-comments text-2xl to-gray-700"></i>
+                      <span class="text-base text-gray-600">Comunicación efectiva</span>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-user-plus text-2xl to-gray-700"></i>
+                      <span class="text-base text-gray-600">Trabajo en equipo</span>
+                    </li>
+                    <li>
+                      <i class="fa-sharp fa-solid fa-flag text-2xl to-gray-700"></i>
+                      <span class="text-base text-gray-600">Liderazgo</span>
+                    </li>
+                    <li>
+                      <i class="fa-sharp fa-solid fa-flag text-2xl to-gray-700"></i>
+                      <span class="text-base text-gray-600">Organización y gestión del tiempo</span>
+                    </li>
+                    <li>
+                      <i class="fa-sharp fa-solid fa-flag text-2xl to-gray-700"></i>
+                      <span class="text-base text-gray-600">Proactividad y iniciativa</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="md:col-span-1">
+                  <h2 class="text-2xl text-gray-700 font-normal leading-normal mt-0 mb-4">Habilidades tecnicas</h2>
+                  <ul class="space-y-4">
+                    <li>
+                      <i class="fa-brands fa-laravel text-2xl to-gray-700"></i>
+                      <span class="text-base text-gray-600">Laravel</span>
+                    </li>
+                    <li>
+                      <i class="fa-brands fa-html5 text-2xl to-gray-700"></i>
+                      <i class="fa-brands fa-css3 text-2xl to-gray-700"></i>
+                      <span class="text-base text-gray-600">HTML y CSS</span>
+                    </li>
+                    <li>
+                      <i class="fa-brands fa-js text-2xl to-gray-700"></i>
+                      <span class="text-base text-gray-600">Javascript</span>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-database text-2xl to-gray-700"></i>
+                      <span class="text-base text-gray-600">SQL</span>
+                    </li>
+                    <li>
+                      <i class="fa-brands fa-aws text-2xl to-gray-700"></i>
+                      <span class="text-base text-gray-600">AWS</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+            <div x-show="open == 'education'">3</div>
+            <div x-show="open == 'porfolio'">4</div>
+            <div x-show="open == 'contact'">5</div>
+          </main>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
